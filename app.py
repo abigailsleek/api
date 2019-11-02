@@ -113,7 +113,7 @@ def get_summary():
     threshold = find_average_score(sentence_scores)
     print(sentences)
     # Important Algorithm: Generate the summary
-    summary = generate_summary(sentences, sentence_scores, 1.8 * threshold)
+    summary = generate_summary(sentences, sentence_scores, 0.8 * threshold)
     return jsonify({"summary": summary})
 
 
